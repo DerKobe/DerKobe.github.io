@@ -9,7 +9,7 @@
 title: Sounds Good To Me
 email: phil@jack.chat
 description: > # this means to ignore newlines until "baseurl:"
-  Greetings traveler! My name is Philip Claren and I'm a developer, musician, and one of the founders of Talk About Jack (http://jack.chat).
+  Well met! My name is Philip Claren and I'm a developer, musician, and one of the founders of Talk About Jack (http://jack.chat).
   My daily work is mostly about Elixir/Phoenix, Ruby, CoffeeScript, and SCSS. In my non-existent spare time I'm a passionate Hearthstone player, and on rare occasions I build music with Propellerhead's Reason and my trusty drumset.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://derkobe.github.io" # the base hostname & protocol for your site
