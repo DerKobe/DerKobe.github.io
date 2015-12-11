@@ -1,0 +1,66 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    aws-sdk (2.2.5)
+      aws-sdk-resources (= 2.2.5)
+    aws-sdk-core (2.2.5)
+      jmespath (~> 1.0)
+    aws-sdk-resources (2.2.5)
+      aws-sdk-core (= 2.2.5)
+    colorator (0.1)
+    ffi (1.9.10)
+    jekyll (3.0.1)
+      colorator (~> 0.1)
+      jekyll-sass-converter (~> 1.0)
+      jekyll-watch (~> 1.1)
+      kramdown (~> 1.3)
+      liquid (~> 3.0)
+      mercenary (~> 0.3.3)
+      rouge (~> 1.7)
+      safe_yaml (~> 1.0)
+    jekyll-sass-converter (1.3.0)
+      sass (~> 3.2)
+    jekyll-watch (1.3.0)
+      listen (~> 3.0)
+    jmespath (1.1.3)
+    kramdown (1.9.0)
+    liquid (3.0.6)
+    listen (3.0.5)
+      rb-fsevent (>= 0.9.3)
+      rb-inotify (>= 0.9)
+    mercenary (0.3.5)
+    octopress (3.0.11)
+      jekyll (>= 2.0)
+      mercenary (~> 0.3.2)
+      octopress-deploy
+      octopress-escape-code (~> 2.0)
+      octopress-hooks (~> 2.0)
+      redcarpet (~> 3.0)
+      titlecase
+    octopress-deploy (1.3.0)
+      colorator
+    octopress-escape-code (2.1.1)
+      jekyll (~> 3.0)
+    octopress-hooks (2.6.1)
+      jekyll (>= 2.0)
+    rake (10.4.2)
+    rb-fsevent (0.9.6)
+    rb-inotify (0.9.5)
+      ffi (>= 0.5.0)
+    redcarpet (3.3.3)
+    rouge (1.10.1)
+    safe_yaml (1.0.4)
+    sass (3.4.20)
+    titlecase (0.1.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  aws-sdk
+  octopress (~> 3.0.0)
+  octopress-deploy
+  rake
+
+BUNDLED WITH
+   1.10.6
