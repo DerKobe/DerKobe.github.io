@@ -4,12 +4,21 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+Well met! 
 
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jglovier" %} /
-[jekyll-new](https://github.com/jglovier/jekyll-new)
+My name is Philip Claren and I'm a developer, musician, and one of the founders of [{% img /assets/talk-about-jack.png 32 32 Talk About Jack %}](http://jack.chat).
+My daily work is mostly about {% img /assets/elixir.png 32 32 Elixir %}
+                              {% img /assets/phoenix.png 32 32 Phoenix Framework %}
+                              {% img /assets/swift.jpg 32 32 Swift %}
+                              {% img /assets/postgresql.png 32 32 PostgreSQL %}
+                              {% img /assets/coffeescript.png 32 32 CoffeeScript %}
+                              {% img /assets/ruby.jpg 32 32 Ruby %}
+                              {% img /assets/html5.png 32 32 HTML5 %}
+                              {% img /assets/css3.png 32 32 CSS3 %}
+                               and occasionally {% img /assets/mongodb.png 32 32 MongoDB %}.
 
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+
+In my non-existent spare time I'm a passionate {% img /assets/hearthstone.png 32 32 Hearthstone %} player, and on rare occasions I build music with {% img /assets/reason.png 32 32 Propellerheads Reason %} and my trusty drumset.
+
+If you want to comment on, or talk about a post you can do this via [Talk About Jack](http://jack.chat) (just [install the Chrome Extension](https://chrome.google.com/webstore/detail/talk-about-jack/mfjhkijmchogjenmblohgkifnakapbhf) and leave a message in the "Page" channel of the post).
+And of course you're always welcome to reach out to me via the "Domain" Channel.

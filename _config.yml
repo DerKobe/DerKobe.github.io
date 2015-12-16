@@ -6,11 +6,10 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Sounds Good To Me
+title: Sounds good to me.
 email: phil@jack.chat
 description: > # this means to ignore newlines until "baseurl:"
-  Well met! My name is Philip Claren and I'm a developer, musician, and one of the founders of Talk About Jack (http://jack.chat).
-  My daily work is mostly about Elixir/Phoenix, Ruby, CoffeeScript, and SCSS. In my non-existent spare time I'm a passionate Hearthstone player, and on rare occasions I build music with Propellerhead's Reason and my trusty drumset.
+  A tech and stuff blog ... but mostly tech.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://derkobe.github.io" # the base hostname & protocol for your site
 twitter_username: DerKobe
