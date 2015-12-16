@@ -5,7 +5,3 @@ gem 'rake'
 gem 'octopress-deploy'
 
 #gem 'github-pages'
-
-group :jekyll_plugins do
-  gem 'octopress-codefence'
-end

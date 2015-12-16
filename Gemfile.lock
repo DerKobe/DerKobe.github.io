@@ -30,11 +30,6 @@ GEM
       octopress-hooks (~> 2.0)
       redcarpet (~> 3.0)
       titlecase
-    octopress-code-highlighter (4.3.0)
-      jekyll (~> 3.0)
-    octopress-codefence (1.7.0)
-      jekyll (~> 3.0)
-      octopress-code-highlighter (~> 4.2)
     octopress-deploy (1.3.0)
       colorator
     octopress-escape-code (2.1.1)
@@ -56,7 +51,6 @@ PLATFORMS
 
 DEPENDENCIES
   octopress (~> 3.0.11)
-  octopress-codefence
   octopress-deploy
   rake
 

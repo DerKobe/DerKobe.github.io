@@ -14,9 +14,9 @@ I dug for the original javascript and found it in ```PROJECT_PATH/deps/phoenix/w
 Now Phoenix handles ES6 very elegantly via Brunch, but in my Chrome Extension project I use CoffeeScript and sometimes plain Javascript.
 So I took the ES6 file and converted it to Javascript. I tried different online [transpilers](https://en.wikipedia.org/wiki/Source-to-source_compiler) and in the end went with [Babel](https://babeljs.io/repl/).
 
-I wrote a publish subscribe client to connect to the server and handle the channels and the subscribe, publish, and unsubscribe actions:
+I wrote a publish-subscribe-client to connect to the server and handle the channels and the subscribe, publish, and unsubscribe actions:
 
-```coffee-script pubsub_client.coffee
+<pre>
 class PubsubClient
   constructor: (host, signedToken)->
     # host is something like https://my.server.com
@@ -68,7 +68,7 @@ class PubsubClient
   
   _connectionPath: (host)->
     "#{host.replace('http:','ws:').replace('https:','wss:')}/socket"
-```
+</pre>
 
 There is a lot of room for improvements here. For one the passed follow-up function in form of the ```next```-parameters should be replaced with promises.
 
