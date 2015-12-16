@@ -8,5 +8,5 @@ gem 'octopress-deploy'
 
 group :jekyll_plugins do
   gem 'octopress-image-tag'
-  gem 'octopress-codeblock'
+  gem 'octopress-codefence'
 end

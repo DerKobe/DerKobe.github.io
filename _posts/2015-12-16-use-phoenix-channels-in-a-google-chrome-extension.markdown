@@ -16,7 +16,7 @@ So I took the ES6 file and converted it to Javascript. I tried different online 
 
 I wrote a publish subscribe client to connect to the server and handle the channels and the subscribe, publish, and unsubscribe actions:
 
-{% codeblock lang:coffee-script pubsub_client.coffee %}
+``` coffee-script pubsub_client.coffee
 class PubsubClient
   constructor: (host, signedToken)->
     # host is something like https://my.server.com
@@ -68,7 +68,7 @@ class PubsubClient
   
   _connectionPath: (host)->
     "#{host.replace('http:','ws:').replace('https:','wss:')}/socket"
-{% endcodeblock %}
+``
 
 There is a lot of room for improvements here. For one the passed follow-up function in form of the ```next```-parameters should be replaced with promises.
 

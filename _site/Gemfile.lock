@@ -32,7 +32,8 @@ GEM
       titlecase
     octopress-code-highlighter (4.3.0)
       jekyll (~> 3.0)
-    octopress-codeblock (1.0.5)
+    octopress-codefence (1.7.0)
+      jekyll (~> 3.0)
       octopress-code-highlighter (~> 4.2)
     octopress-deploy (1.3.0)
       colorator
@@ -57,7 +58,7 @@ PLATFORMS
 
 DEPENDENCIES
   octopress (~> 3.0.11)
-  octopress-codeblock
+  octopress-codefence
   octopress-deploy
   octopress-image-tag
   rake
