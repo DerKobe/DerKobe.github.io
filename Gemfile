@@ -7,6 +7,5 @@ gem 'octopress-deploy'
 #gem 'github-pages'
 
 group :jekyll_plugins do
-  gem 'octopress-image-tag'
   gem 'octopress-codefence'
 end

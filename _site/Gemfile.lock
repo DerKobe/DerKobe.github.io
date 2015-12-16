@@ -41,8 +41,6 @@ GEM
       jekyll (~> 3.0)
     octopress-hooks (2.6.1)
       jekyll (>= 2.0)
-    octopress-image-tag (1.1.0)
-      jekyll
     rake (10.4.2)
     rb-fsevent (0.9.6)
     rb-inotify (0.9.5)
@@ -60,7 +58,6 @@ DEPENDENCIES
   octopress (~> 3.0.11)
   octopress-codefence
   octopress-deploy
-  octopress-image-tag
   rake
 
 BUNDLED WITH
