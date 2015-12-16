@@ -20,5 +20,5 @@ My daily work is mostly about <img src="/assets/elixir.png" width="32" height="3
 
 In my non-existent spare time I'm a passionate <img src="/assets/hearthstone.png" width="32" height="32" title="Hearthstone" /> player, and on rare occasions I build music with <img src="/assets/reason.png" width="32" height="32" title="Propellerheads Reason" /> and my trusty drumset.
 
-If you want to comment on, or talk about a post you can do this via [Talk About Jack](http://jack.chat) (just [install the Chrome Extension](https://chrome.google.com/webstore/detail/talk-about-jack/mfjhkijmchogjenmblohgkifnakapbhf" /> and leave a message in the "Page" channel of the post).
+If you want to comment on, or talk about a post you can do this via [Talk About Jack](http://jack.chat) (just [install the Chrome Extension](https://chrome.google.com/webstore/detail/talk-about-jack/mfjhkijmchogjenmblohgkifnakapbhf) and leave a message in the "Page" channel of the post).
 And of course you're always welcome to reach out to me via the "Domain" Channel.
