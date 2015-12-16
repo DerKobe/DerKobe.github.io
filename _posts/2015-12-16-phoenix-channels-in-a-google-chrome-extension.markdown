@@ -68,7 +68,6 @@ class PubsubClient
   
   _connectionPath: (host)->
     "#{host.replace('http:','ws:').replace('https:','wss:')}/socket"
-
 ```
 
 There is a lot of room for improvements here. For one the passed follow-up function in form of the ```next```-parameters should be replaced with promises.

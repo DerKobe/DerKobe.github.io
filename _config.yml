@@ -18,3 +18,5 @@ github_username:  DerKobe
 # Build settings
 markdown: kramdown
 exclude: [.bundle, bin, vendor]
+gems:
+  - octopress-codefence
