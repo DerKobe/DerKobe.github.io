@@ -6,12 +6,12 @@
 </description>
     <link>http://derkobe.github.io/</link>
     <atom:link href="http://derkobe.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 16 Dec 2015 11:03:36 +0100</pubDate>
-    <lastBuildDate>Wed, 16 Dec 2015 11:03:36 +0100</lastBuildDate>
+    <pubDate>Wed, 16 Dec 2015 11:15:44 +0100</pubDate>
+    <lastBuildDate>Wed, 16 Dec 2015 11:15:44 +0100</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
     
       <item>
-        <title>Use Phoenix Channels in a Google Chrome Extension</title>
+        <title>Phoenix Channels in a Google Chrome Extension</title>
         <description>&lt;p&gt;Phoenix Channels are awesome! With this out of the way let’s get down to business.&lt;/p&gt;
 
 &lt;p&gt;I switched from a combination of Ruby on Rails, and Faye on NodeJS to Elixir/Phoenix.
@@ -81,8 +81,8 @@ So I took the ES6 file and converted it to Javascript. I tried different online 
 And of course you’re always welcome to reach out to me via the “Domain” Channel.&lt;/em&gt;&lt;/p&gt;
 </description>
         <pubDate>Wed, 16 Dec 2015 09:44:47 +0100</pubDate>
-        <link>http://derkobe.github.io/2015/12/16/use-phoenix-channels-in-a-google-chrome-extension.html</link>
-        <guid isPermaLink="true">http://derkobe.github.io/2015/12/16/use-phoenix-channels-in-a-google-chrome-extension.html</guid>
+        <link>http://derkobe.github.io/2015/12/16/phoenix-channels-in-a-google-chrome-extension.html</link>
+        <guid isPermaLink="true">http://derkobe.github.io/2015/12/16/phoenix-channels-in-a-google-chrome-extension.html</guid>
         
         
       </item>
