@@ -4,7 +4,7 @@ title: "The Official Internet Chillout Area"
 date: 2015-12-18T15:21:07+01:00
 ---
 
-This is something I wrote over 10 years ago with Macromedia Flash. I just stumbled upon it as I was looking for the FTP credentials for a customer of mine from, well 10 years ago.
+This is something I wrote over 10 years ago with Macromedia Flash. I just stumbled upon it as I was looking for the FTP credentials for a customer of mine from well, 10 years ago.
 Today was throwback Friday.
 
 So, take a minute and maybe get a little peace with this or just sharpen you mouse hovering piano skills.
