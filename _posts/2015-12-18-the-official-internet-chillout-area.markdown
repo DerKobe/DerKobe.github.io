@@ -7,7 +7,7 @@ date: 2015-12-18T15:21:07+01:00
 This is something I wrote over 10 years ago with Macromedia Flash. I just stumbled upon it as I was looking for the FTP credentials for a customer of mine from well, 10 years ago.
 Today was throwback Friday.
 
-So, take a minute and maybe get a little peace with this or just sharpen you mouse hovering piano skills.
+So, take a minute and maybe get a little peace with this or just sharpen you mouse-hovering-vibraphone-skills.
 
 <div style="text-align: center; margin: 150px 0;">
   <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="250" height="60" title="buttons" align="middle">
