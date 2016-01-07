@@ -10,6 +10,8 @@ The method you're about to read about how to structure code to avoid this, was n
 But sadly I can't remember where I read it. Even sadder I have seen it IRL way to rarely. But maybe this is just my opinion, so judge for yourself.
 
 The idea is to move code out of controllers and models that does not belong there measured by very strict and almost inquisitiony standards.
+In models just keep the really-general-every-instance-of-this-must-have stuff. In controllers only "controlling" code is allowed.
+
 A few examples:
 
 - There's a method in your Ruby model to create an admin user? That's a paddlin'.
