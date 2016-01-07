@@ -16,7 +16,7 @@ So I took the ES6 file and converted it to Javascript. I tried different online 
 
 I wrote a publish-subscribe-client to connect to the server and handle the channels and the subscribe, publish, and unsubscribe actions:
 
-<pre>
+{% highlight coffee %}
 class PubsubClient
   constructor: (host, signedToken)->
     # host is something like https://my.server.com
@@ -68,7 +68,7 @@ class PubsubClient
   
   _connectionPath: (host)->
     "#{host.replace('http:','ws:').replace('https:','wss:')}/socket"
-</pre>
+{% endhighlight %}
 
 There is a lot of room for improvements here. For one the passed follow-up function in form of the ```next```-parameters should be replaced with promises.
 
@@ -77,6 +77,6 @@ But that's a problem for future me.
 
 ---
 
-### Comments
+# Comments
 _If you want to comment on, or talk about this post you can do this via [<img src="/assets/talk-about-jack.png" width="32" height="32" title="Talk About Jack" />](http://jack.chat) (just [install the Chrome Extension](https://chrome.google.com/webstore/detail/talk-about-jack/mfjhkijmchogjenmblohgkifnakapbhf) and leave a message in the "Page" channel of this post).
 And of course you're always welcome to reach out to me via the "Domain" Channel._

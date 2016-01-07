@@ -18,3 +18,6 @@ github_username:  DerKobe
 # Build settings
 markdown: kramdown
 exclude: [.bundle, bin, vendor]
+syntax-highlighting:
+  enabled : true
+  css: syntax.css

@@ -75,59 +75,57 @@ So I took the ES6 file and converted it to Javascript. I tried different online 
 
 <p>I wrote a publish-subscribe-client to connect to the server and handle the channels and the subscribe, publish, and unsubscribe actions:</p>
 
-<pre>
-class PubsubClient
-  constructor: (host, signedToken)-&gt;
-    # host is something like https://my.server.com
-    # signedToken is retrieved by a previous api call from the Phoenix backend
-
-    # Socket comes from the transpiled phoenix.js
-    @socket = new Socket(@_connectionPath(host), params: {signedToken: signedToken})
-    @socket.connect()
-    @channels = {}
+<figure class="highlight"><pre><code class="language-coffee" data-lang="coffee"><span class="k">class</span> <span class="nx">PubsubClient</span>
+  <span class="na">constructor</span><span class="o">:</span> <span class="p">(</span><span class="nx">host</span><span class="p">,</span> <span class="nx">signedToken</span><span class="p">)</span><span class="o">-&gt;</span>
+    <span class="c1"># host is something like https://my.server.com
+</span>    <span class="c1"># signedToken is retrieved by a previous api call from the Phoenix backend
+</span>
+    <span class="c1"># Socket comes from the transpiled phoenix.js
+</span>    <span class="vi">@</span><span class="na">socket</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Socket</span><span class="p">(</span><span class="vi">@</span><span class="na">_connectionPath</span><span class="p">(</span><span class="nx">host</span><span class="p">),</span> <span class="na">params</span><span class="o">:</span> <span class="p">{</span><span class="na">signedToken</span><span class="o">:</span> <span class="nx">signedToken</span><span class="p">})</span>
+    <span class="vi">@</span><span class="na">socket</span><span class="p">.</span><span class="na">connect</span><span class="p">()</span>
+    <span class="vi">@</span><span class="na">channels</span> <span class="o">=</span> <span class="p">{}</span>
   
-  subscribe: (channel, receivers, next)-&gt;
-    # receivers look something like this:
-    # { 
-    #   'some:event': (msg)-&gt; console.log(msg) 
-    #   'some:other_event': (msg)-&gt; console.log(msg)
-    #   ...
-    # }
-    @channels[channel] ||= @socket.channel(channel)
-    _.each receivers, (receiver, topic)=&gt;
-      @channels[channel].on(topic, (data)-&gt;
-        console.debug "message #{topic} received on #{channel}"
-        receiver(data)
-      )
+  <span class="na">subscribe</span><span class="o">:</span> <span class="p">(</span><span class="nx">channel</span><span class="p">,</span> <span class="nx">receivers</span><span class="p">,</span> <span class="nx">next</span><span class="p">)</span><span class="o">-&gt;</span>
+    <span class="c1"># receivers look something like this:
+</span>    <span class="c1"># { 
+</span>    <span class="c1">#   'some:event': (msg)-&gt; console.log(msg) 
+</span>    <span class="c1">#   'some:other_event': (msg)-&gt; console.log(msg)
+</span>    <span class="c1">#   ...
+</span>    <span class="c1"># }
+</span>    <span class="vi">@</span><span class="na">channels</span><span class="p">[</span><span class="nx">channel</span><span class="p">]</span> <span class="o">||=</span> <span class="vi">@</span><span class="na">socket</span><span class="p">.</span><span class="na">channel</span><span class="p">(</span><span class="nx">channel</span><span class="p">)</span>
+    <span class="nx">_</span><span class="p">.</span><span class="na">each</span> <span class="nx">receivers</span><span class="p">,</span> <span class="p">(</span><span class="nx">receiver</span><span class="p">,</span> <span class="nx">topic</span><span class="p">)</span><span class="o">=&gt;</span>
+      <span class="vi">@</span><span class="na">channels</span><span class="p">[</span><span class="nx">channel</span><span class="p">].</span><span class="na">on</span><span class="p">(</span><span class="nx">topic</span><span class="p">,</span> <span class="p">(</span><span class="nx">data</span><span class="p">)</span><span class="o">-&gt;</span>
+        <span class="nx">console</span><span class="p">.</span><span class="na">debug</span> <span class="s">"message </span><span class="si">#{</span><span class="nx">topic</span><span class="si">}</span><span class="s"> received on </span><span class="si">#{</span><span class="nx">channel</span><span class="si">}</span><span class="s">"</span>
+        <span class="nx">receiver</span><span class="p">(</span><span class="nx">data</span><span class="p">)</span>
+      <span class="p">)</span>
   
-    @channels[channel]
-    .join()
-    .receive('error', (resp)-&gt;
-      console.error "An error occured on joining '#{channel}'", resp
-    )
-    .receive('ok', -&gt;
-      console.debug "Successfully joined #{channel}"
-      next?()
-    )
+    <span class="vi">@</span><span class="na">channels</span><span class="p">[</span><span class="nx">channel</span><span class="p">]</span>
+    <span class="p">.</span><span class="na">join</span><span class="p">()</span>
+    <span class="p">.</span><span class="na">receive</span><span class="p">(</span><span class="s">'error'</span><span class="p">,</span> <span class="p">(</span><span class="nx">resp</span><span class="p">)</span><span class="o">-&gt;</span>
+      <span class="nx">console</span><span class="p">.</span><span class="na">error</span> <span class="s">"An error occured on joining '</span><span class="si">#{</span><span class="nx">channel</span><span class="si">}</span><span class="s">'"</span><span class="p">,</span> <span class="nx">resp</span>
+    <span class="p">)</span>
+    <span class="p">.</span><span class="na">receive</span><span class="p">(</span><span class="s">'ok'</span><span class="p">,</span> <span class="o">-&gt;</span>
+      <span class="nx">console</span><span class="p">.</span><span class="na">debug</span> <span class="s">"Successfully joined </span><span class="si">#{</span><span class="nx">channel</span><span class="si">}</span><span class="s">"</span>
+      <span class="nx">next</span><span class="o">?</span><span class="p">()</span>
+    <span class="p">)</span>
   
-  publish: (channel, topic, data = {}, next = -&gt;)-&gt;
-    @channels[channel] ||= @socket.channel(channel, {})
-    @channels[channel]
-    .push(topic, data)
-    .receive('ok', next)
+  <span class="na">publish</span><span class="o">:</span> <span class="p">(</span><span class="nx">channel</span><span class="p">,</span> <span class="nx">topic</span><span class="p">,</span> <span class="nx">data</span> <span class="o">=</span> <span class="p">{},</span> <span class="nx">next</span> <span class="o">=</span> <span class="o">-&gt;</span><span class="p">)</span><span class="o">-&gt;</span>
+    <span class="vi">@</span><span class="na">channels</span><span class="p">[</span><span class="nx">channel</span><span class="p">]</span> <span class="o">||=</span> <span class="vi">@</span><span class="na">socket</span><span class="p">.</span><span class="na">channel</span><span class="p">(</span><span class="nx">channel</span><span class="p">,</span> <span class="p">{})</span>
+    <span class="vi">@</span><span class="na">channels</span><span class="p">[</span><span class="nx">channel</span><span class="p">]</span>
+    <span class="p">.</span><span class="na">push</span><span class="p">(</span><span class="nx">topic</span><span class="p">,</span> <span class="nx">data</span><span class="p">)</span>
+    <span class="p">.</span><span class="na">receive</span><span class="p">(</span><span class="s">'ok'</span><span class="p">,</span> <span class="nx">next</span><span class="p">)</span>
   
-  unsubscribe: (channel, next)-&gt;
-    if @channels[channel]?
-      @channels[channel]
-      .leave()
-      .receive('ok', (data)=&gt;
-        @channels[channel] = null
-        next?(data)
-      )
+  <span class="na">unsubscribe</span><span class="o">:</span> <span class="p">(</span><span class="nx">channel</span><span class="p">,</span> <span class="nx">next</span><span class="p">)</span><span class="o">-&gt;</span>
+    <span class="k">if</span> <span class="vi">@</span><span class="na">channels</span><span class="p">[</span><span class="nx">channel</span><span class="p">]</span><span class="o">?</span>
+      <span class="vi">@</span><span class="na">channels</span><span class="p">[</span><span class="nx">channel</span><span class="p">]</span>
+      <span class="p">.</span><span class="na">leave</span><span class="p">()</span>
+      <span class="p">.</span><span class="na">receive</span><span class="p">(</span><span class="s">'ok'</span><span class="p">,</span> <span class="p">(</span><span class="nx">data</span><span class="p">)</span><span class="o">=&gt;</span>
+        <span class="vi">@</span><span class="na">channels</span><span class="p">[</span><span class="nx">channel</span><span class="p">]</span> <span class="o">=</span> <span class="no">null</span>
+        <span class="nx">next</span><span class="o">?</span><span class="p">(</span><span class="nx">data</span><span class="p">)</span>
+      <span class="p">)</span>
   
-  _connectionPath: (host)-&gt;
-    "#{host.replace('http:','ws:').replace('https:','wss:')}/socket"
-</pre>
+  <span class="na">_connectionPath</span><span class="o">:</span> <span class="p">(</span><span class="nx">host</span><span class="p">)</span><span class="o">-&gt;</span>
+    <span class="s">"</span><span class="si">#{</span><span class="nx">host</span><span class="p">.</span><span class="na">replace</span><span class="p">(</span><span class="s">'http:'</span><span class="p">,</span><span class="s">'ws:'</span><span class="p">).</span><span class="na">replace</span><span class="p">(</span><span class="s">'https:'</span><span class="p">,</span><span class="s">'wss:'</span><span class="p">)</span><span class="si">}</span><span class="s">/socket"</span></code></pre></figure>
 
 <p>There is a lot of room for improvements here. For one the passed follow-up function in form of the <code class="highlighter-rouge">next</code>-parameters should be replaced with promises.</p>
 
@@ -135,7 +133,7 @@ class PubsubClient
 
 <hr />
 
-<h3 id="comments">Comments</h3>
+<h1 id="comments">Comments</h1>
 <p><em>If you want to comment on, or talk about this post you can do this via <a href="http://jack.chat"><img src="/assets/talk-about-jack.png" width="32" height="32" title="Talk About Jack" /></a> (just <a href="https://chrome.google.com/webstore/detail/talk-about-jack/mfjhkijmchogjenmblohgkifnakapbhf">install the Chrome Extension</a> and leave a message in the “Page” channel of this post).
 And of course you’re always welcome to reach out to me via the “Domain” Channel.</em></p>
 
