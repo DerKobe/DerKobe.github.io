@@ -15,7 +15,7 @@ In models just keep the really-general-every-instance-of-this-must-have stuff. I
 A few examples:
 
 - There's a method in your Ruby model to create an admin user? That's a paddlin'.
-- In a controller there is a block of code getting records from the Database via a model and mapping the data to something to pass to the template? That's a paddlin'.
+- In a controller (Phoenix, Rails, ...) there is a block of code getting records from the Database via a model and mapping the data to something to pass to the template? That's a paddlin'.
 - There're callbacks in a model? You better believe that's a paddlin'.
 
 <center><img src="/assets/paddlin.png" width="100" height="100" style="border-radius: 5px;" /></center>
@@ -25,8 +25,8 @@ But where do I put the code?
 
 # Services
 
-A service is just a Ruby module with a bunch of methods. I used services whenever I did not need to store state along the way of computing the outcome.
-For example I had this code to get a consecutive list of successful and aborted registrations. 
+A service is just a Ruby or Elixir module (or equivalent in your language) with a bunch of methods/functions. I used services whenever I did not need to store state along the way of computing the outcome.
+For example I had this Ruby code to get a consecutive list of successful and aborted registrations. 
 The code does not belong in the `users` model because it's purpose is too specific.
  
 {% highlight ruby %}
@@ -80,6 +80,7 @@ But the code and tests are easier to read and maintain (for both the user-model 
 # Processes
 
 I use services almost always to compute stuff with no side effects. Processes on the other hand are almost always more complex and involve more steps along the way. Their main purpose is the side effects and not the return value.
+If you're an Elixir (or any other functional language) developer than obviously processes must be implemented some other way. But for the sake of the example I stick to Ruby for this one. 
   
 {% highlight ruby %}
 module MessageProcesses
@@ -118,7 +119,7 @@ module MessageProcesses
 end
 {% endhighlight %}
 
-This particular process was used (very much) like this in a controller: 
+This particular process was used (very much) like this in a Rails controller: 
 {% highlight ruby %}
 def create
   process = MessageProcesses::Create.new(
