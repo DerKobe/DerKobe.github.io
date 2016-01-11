@@ -6,15 +6,15 @@
 </description>
     <link>http://derkobe.github.io/</link>
     <atom:link href="http://derkobe.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 11 Jan 2016 20:24:14 +0100</pubDate>
-    <lastBuildDate>Mon, 11 Jan 2016 20:24:14 +0100</lastBuildDate>
+    <pubDate>Mon, 11 Jan 2016 20:32:07 +0100</pubDate>
+    <lastBuildDate>Mon, 11 Jan 2016 20:32:07 +0100</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
     
       <item>
-        <title>Get Notified When A User Leaves A Phoenix Channel</title>
+        <title>Get Notified When An User Leaves A Phoenix Channel</title>
         <description>&lt;p&gt;This post is based on the stackoverflow answer by &lt;a href=&quot;https://twitter.com/chris_mccord&quot;&gt;Chris McCord&lt;/a&gt; to my question on this topic (&lt;a href=&quot;http://stackoverflow.com/questions/33934029/how-to-detect-if-a-user-left-a-phoenix-channel-due-to-a-network-disconnect&quot;&gt;see here&lt;/a&gt;).&lt;/p&gt;
 
-&lt;p&gt;I’m working on a project where I wanted to trigger a function when a user leaves a Phoenix channel due to closing the app, losing network connection and so on (basically every “leaving event” where the app is not able to notify the server).
+&lt;p&gt;I’m working on a project where I wanted to trigger a function when an user leaves a Phoenix channel due to closing the app, losing network connection and so on (basically every “leaving event” where the app is not able to notify the server).
 The answer is using a &lt;a href=&quot;http://elixir-lang.org/docs/v1.2/elixir/GenServer.html&quot;&gt;GenServer&lt;/a&gt; to watch the established connection and trap the exit.&lt;/p&gt;
 
 &lt;h1 id=&quot;libmyappex&quot;&gt;lib/my_app.ex&lt;/h1&gt;
@@ -122,8 +122,8 @@ The answer is using a &lt;a href=&quot;http://elixir-lang.org/docs/v1.2/elixir/G
 And of course you’re always welcome to reach out to me via the “Domain” Channel.&lt;/em&gt;&lt;/p&gt;
 </description>
         <pubDate>Mon, 11 Jan 2016 19:44:16 +0100</pubDate>
-        <link>http://derkobe.github.io/2016/01/11/get-notified-when-a-user-leaves-a-phoenix-channel.html</link>
-        <guid isPermaLink="true">http://derkobe.github.io/2016/01/11/get-notified-when-a-user-leaves-a-phoenix-channel.html</guid>
+        <link>http://derkobe.github.io/2016/01/11/get-notified-when-an-user-leaves-a-phoenix-channel.html</link>
+        <guid isPermaLink="true">http://derkobe.github.io/2016/01/11/get-notified-when-an-user-leaves-a-phoenix-channel.html</guid>
         
         
       </item>

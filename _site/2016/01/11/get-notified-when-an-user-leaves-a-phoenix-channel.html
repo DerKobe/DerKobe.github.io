@@ -6,12 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Get Notified When A User Leaves A Phoenix Channel</title>
+  <title>Get Notified When An User Leaves A Phoenix Channel</title>
   <meta name="description" content="This post is based on the stackoverflow answer by Chris McCord to my question on this topic (see here).I’m working on a project where I wanted to trigger a f...">
 
   <link rel="shortcut icon" type="image/png" href="/favicon.png">
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://derkobe.github.io/2016/01/11/get-notified-when-a-user-leaves-a-phoenix-channel.html">
+  <link rel="canonical" href="http://derkobe.github.io/2016/01/11/get-notified-when-an-user-leaves-a-phoenix-channel.html">
   <link rel="alternate" type="application/rss+xml" title="Sounds good to me." href="http://derkobe.github.io/feed.xml">
 </head>
 
@@ -58,14 +58,14 @@
         <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">Get Notified When A User Leaves A Phoenix Channel</h1>
+    <h1 class="post-title" itemprop="name headline">Get Notified When An User Leaves A Phoenix Channel</h1>
     <p class="post-meta"><time datetime="2016-01-11T19:44:16+01:00" itemprop="datePublished">Jan 11, 2016</time></p>
   </header>
 
   <div class="post-content" itemprop="articleBody">
     <p>This post is based on the stackoverflow answer by <a href="https://twitter.com/chris_mccord">Chris McCord</a> to my question on this topic (<a href="http://stackoverflow.com/questions/33934029/how-to-detect-if-a-user-left-a-phoenix-channel-due-to-a-network-disconnect">see here</a>).</p>
 
-<p>I’m working on a project where I wanted to trigger a function when a user leaves a Phoenix channel due to closing the app, losing network connection and so on (basically every “leaving event” where the app is not able to notify the server).
+<p>I’m working on a project where I wanted to trigger a function when an user leaves a Phoenix channel due to closing the app, losing network connection and so on (basically every “leaving event” where the app is not able to notify the server).
 The answer is using a <a href="http://elixir-lang.org/docs/v1.2/elixir/GenServer.html">GenServer</a> to watch the established connection and trap the exit.</p>
 
 <h1 id="libmyappex">lib/my_app.ex</h1>
