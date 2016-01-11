@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Get Notified When A User Leaves A Phoenix Channel"
+title: "Get Notified When An User Leaves A Phoenix Channel"
 date: 2016-01-11T19:44:16+01:00
 ---
 
