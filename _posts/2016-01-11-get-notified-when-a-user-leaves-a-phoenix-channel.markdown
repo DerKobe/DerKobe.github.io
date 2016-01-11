@@ -6,7 +6,7 @@ date: 2016-01-11T19:44:16+01:00
 
 This post is based on the stackoverflow answer by [Chris McCord](https://twitter.com/chris_mccord) to my question on this topic ([see here](http://stackoverflow.com/questions/33934029/how-to-detect-if-a-user-left-a-phoenix-channel-due-to-a-network-disconnect)).
  
-I'm working on a project where I wanted to trigger a function when a user leaves a Phoenix channel due to closing the app, losing network connection and so on (basically every "leaving event" where the app is not able to notify the server).
+I'm working on a project where I wanted to trigger a function when an user leaves a Phoenix channel due to closing the app, losing network connection and so on (basically every "leaving event" where the app is not able to notify the server).
 The answer is using a [GenServer](http://elixir-lang.org/docs/v1.2/elixir/GenServer.html) to watch the established connection and trap the exit.  
 
 # lib/my_app.ex
