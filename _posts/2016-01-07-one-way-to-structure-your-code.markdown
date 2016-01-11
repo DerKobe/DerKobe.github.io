@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "One Way to Structure Your Code"
+title: "One Way To Structure Your Code"
 date: 2016-01-07T09:55:40+01:00
 ---
 

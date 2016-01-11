@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Phoenix Channels in a Google Chrome Extension"
+title: "Phoenix Channels In A Google Chrome Extension"
 date: 2015-12-16T09:44:47+01:00
 ---
 

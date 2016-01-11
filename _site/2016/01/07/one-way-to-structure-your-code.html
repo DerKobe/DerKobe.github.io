@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>One Way to Structure Your Code</title>
+  <title>One Way To Structure Your Code</title>
   <meta name="description" content="I worked with different project sizes (in terms of LoC) along my way. And I have seen a lot of projects with either bloated controllers or models … or both.T...">
 
   <link rel="shortcut icon" type="image/png" href="/favicon.png">
@@ -58,7 +58,7 @@
         <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">One Way to Structure Your Code</h1>
+    <h1 class="post-title" itemprop="name headline">One Way To Structure Your Code</h1>
     <p class="post-meta"><time datetime="2016-01-07T09:55:40+01:00" itemprop="datePublished">Jan 7, 2016</time></p>
   </header>
 
@@ -69,11 +69,13 @@ The method you’re about to read about how to structure code to avoid this, was
 But sadly I can’t remember where I read it. Even sadder I have seen it IRL way to rarely. But maybe this is just my opinion, so judge for yourself.</p>
 
 <p>The idea is to move code out of controllers and models that does not belong there measured by very strict and almost inquisitiony standards.
-A few examples:</p>
+In models just keep the really-general-every-instance-of-this-must-have stuff. In controllers only “controlling” code is allowed.</p>
+
+<p>A few examples:</p>
 
 <ul>
   <li>There’s a method in your Ruby model to create an admin user? That’s a paddlin’.</li>
-  <li>In a controller there is a block of code getting records from the Database via a model and mapping the data to something to pass to the template? That’s a paddlin’.</li>
+  <li>In a controller (Phoenix, Rails, …) there is a block of code getting records from the Database via a model and mapping the data to something to pass to the template? That’s a paddlin’.</li>
   <li>There’re callbacks in a model? You better believe that’s a paddlin’.</li>
 </ul>
 
@@ -83,8 +85,8 @@ A few examples:</p>
 
 <h1 id="services">Services</h1>
 
-<p>A service is just a Ruby module with a bunch of methods. I used services whenever I did not need to store state along the way of computing the outcome.
-For example I had this code to get a consecutive list of successful and aborted registrations. 
+<p>A service is just a Ruby or Elixir module (or equivalent in your language) with a bunch of methods/functions. I used services whenever I did not need to store state along the way of computing the outcome.
+For example I had this Ruby code to get a consecutive list of successful and aborted registrations. 
 The code does not belong in the <code class="highlighter-rouge">users</code> model because it’s purpose is too specific.</p>
 
 <figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">module</span> <span class="nn">Services::Registrations</span>
@@ -135,7 +137,8 @@ But the code and tests are easier to read and maintain (for both the user-model 
 
 <h1 id="processes">Processes</h1>
 
-<p>I use services almost always to compute stuff with no side effects. Processes on the other hand are almost always more complex and involve more steps along the way. Their main purpose is the side effects and not the return value.</p>
+<p>I use services almost always to compute stuff with no side effects. Processes on the other hand are almost always more complex and involve more steps along the way. Their main purpose is the side effects and not the return value.
+If you’re an Elixir (or any other functional language) developer than obviously processes must be implemented some other way. But for the sake of the example I stick to Ruby for this one.</p>
 
 <figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">module</span> <span class="nn">MessageProcesses</span>
   <span class="k">class</span> <span class="nc">Create</span>
@@ -172,7 +175,7 @@ But the code and tests are easier to read and maintain (for both the user-model 
   <span class="k">end</span>
 <span class="k">end</span></code></pre></figure>
 
-<p>This particular process was used (very much) like this in a controller:</p>
+<p>This particular process was used (very much) like this in a Rails controller:</p>
 
 <figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">create</span>
   <span class="n">process</span> <span class="o">=</span> <span class="no">MessageProcesses</span><span class="o">::</span><span class="no">Create</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span>
