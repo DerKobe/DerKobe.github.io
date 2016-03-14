@@ -114,5 +114,4 @@ This system works very well for me in production. And compared to Faye with whic
 ---
 
 # Comments
-_If you want to comment on, or talk about this post you can do this via [<img src="/assets/talk-about-jack.png" width="32" height="32" title="Talk About Jack" />](http://jack.chat) (just [install the Chrome Extension](https://chrome.google.com/webstore/detail/talk-about-jack/mfjhkijmchogjenmblohgkifnakapbhf) and leave a message in the "Page" channel of this post).
-And of course you're always welcome to reach out to me via the "Domain" Channel._
+_If you want to comment on, or talk about this post you can do this via [<img src="/assets/talk-about-jack.png" width="32" height="32" title="Talk About Jack" /> Talk About Jack](https://www.jack.chat/j/sounds-good-to-me)._

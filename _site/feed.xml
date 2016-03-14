@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Sounds good to me.</title>
+    <title>Sounds good to me</title>
     <description>A tech and stuff blog ... but mostly tech.
 </description>
     <link>http://derkobe.github.io/</link>
     <atom:link href="http://derkobe.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 11 Jan 2016 20:32:07 +0100</pubDate>
-    <lastBuildDate>Mon, 11 Jan 2016 20:32:07 +0100</lastBuildDate>
+    <pubDate>Mon, 14 Mar 2016 13:34:58 +0100</pubDate>
+    <lastBuildDate>Mon, 14 Mar 2016 13:34:58 +0100</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
     
       <item>
@@ -118,8 +118,7 @@ The answer is using a &lt;a href=&quot;http://elixir-lang.org/docs/v1.2/elixir/G
 &lt;hr /&gt;
 
 &lt;h1 id=&quot;comments&quot;&gt;Comments&lt;/h1&gt;
-&lt;p&gt;&lt;em&gt;If you want to comment on, or talk about this post you can do this via &lt;a href=&quot;http://jack.chat&quot;&gt;&lt;img src=&quot;/assets/talk-about-jack.png&quot; width=&quot;32&quot; height=&quot;32&quot; title=&quot;Talk About Jack&quot; /&gt;&lt;/a&gt; (just &lt;a href=&quot;https://chrome.google.com/webstore/detail/talk-about-jack/mfjhkijmchogjenmblohgkifnakapbhf&quot;&gt;install the Chrome Extension&lt;/a&gt; and leave a message in the “Page” channel of this post).
-And of course you’re always welcome to reach out to me via the “Domain” Channel.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;If you want to comment on, or talk about this post you can do this via &lt;a href=&quot;https://www.jack.chat/j/sounds-good-to-me&quot;&gt;&lt;img src=&quot;/assets/talk-about-jack.png&quot; width=&quot;32&quot; height=&quot;32&quot; title=&quot;Talk About Jack&quot; /&gt; Talk About Jack&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
 </description>
         <pubDate>Mon, 11 Jan 2016 19:44:16 +0100</pubDate>
         <link>http://derkobe.github.io/2016/01/11/get-notified-when-an-user-leaves-a-phoenix-channel.html</link>
@@ -266,8 +265,7 @@ If you’re an Elixir (or any other functional language) developer than obviousl
 &lt;hr /&gt;
 
 &lt;h1 id=&quot;comments&quot;&gt;Comments&lt;/h1&gt;
-&lt;p&gt;&lt;em&gt;If you want to comment on, or talk about this post you can do this via &lt;a href=&quot;http://jack.chat&quot;&gt;&lt;img src=&quot;/assets/talk-about-jack.png&quot; width=&quot;32&quot; height=&quot;32&quot; title=&quot;Talk About Jack&quot; /&gt;&lt;/a&gt; (just &lt;a href=&quot;https://chrome.google.com/webstore/detail/talk-about-jack/mfjhkijmchogjenmblohgkifnakapbhf&quot;&gt;install the Chrome Extension&lt;/a&gt; and leave a message in the “Page” channel of this post).
-And of course you’re always welcome to reach out to me via the “Domain” Channel.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;If you want to comment on, or talk about this post you can do this via &lt;a href=&quot;https://www.jack.chat/j/sounds-good-to-me&quot;&gt;&lt;img src=&quot;/assets/talk-about-jack.png&quot; width=&quot;32&quot; height=&quot;32&quot; title=&quot;Talk About Jack&quot; /&gt; Talk About Jack&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
 </description>
         <pubDate>Thu, 07 Jan 2016 09:55:40 +0100</pubDate>
         <link>http://derkobe.github.io/2016/01/07/one-way-to-structure-your-code.html</link>
@@ -302,8 +300,7 @@ Today was throwback Friday.&lt;/p&gt;
 &lt;hr /&gt;
 
 &lt;h1 id=&quot;comments&quot;&gt;Comments&lt;/h1&gt;
-&lt;p&gt;&lt;em&gt;If you want to comment on, or talk about this post you can do this via &lt;a href=&quot;http://jack.chat&quot;&gt;&lt;img src=&quot;/assets/talk-about-jack.png&quot; width=&quot;32&quot; height=&quot;32&quot; title=&quot;Talk About Jack&quot; /&gt;&lt;/a&gt; (just &lt;a href=&quot;https://chrome.google.com/webstore/detail/talk-about-jack/mfjhkijmchogjenmblohgkifnakapbhf&quot;&gt;install the Chrome Extension&lt;/a&gt; and leave a message in the “Page” channel of this post).
-And of course you’re always welcome to reach out to me via the “Domain” Channel.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;If you want to comment on, or talk about this post you can do this via &lt;a href=&quot;https://www.jack.chat/j/sounds-good-to-me&quot;&gt;&lt;img src=&quot;/assets/talk-about-jack.png&quot; width=&quot;32&quot; height=&quot;32&quot; title=&quot;Talk About Jack&quot; /&gt; Talk About Jack&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
 </description>
         <pubDate>Fri, 18 Dec 2015 15:21:07 +0100</pubDate>
         <link>http://derkobe.github.io/2015/12/18/the-official-internet-chillout-area.html</link>
@@ -385,8 +382,7 @@ So I took the ES6 file and converted it to Javascript. I tried different online 
 &lt;hr /&gt;
 
 &lt;h1 id=&quot;comments&quot;&gt;Comments&lt;/h1&gt;
-&lt;p&gt;&lt;em&gt;If you want to comment on, or talk about this post you can do this via &lt;a href=&quot;http://jack.chat&quot;&gt;&lt;img src=&quot;/assets/talk-about-jack.png&quot; width=&quot;32&quot; height=&quot;32&quot; title=&quot;Talk About Jack&quot; /&gt;&lt;/a&gt; (just &lt;a href=&quot;https://chrome.google.com/webstore/detail/talk-about-jack/mfjhkijmchogjenmblohgkifnakapbhf&quot;&gt;install the Chrome Extension&lt;/a&gt; and leave a message in the “Page” channel of this post).
-And of course you’re always welcome to reach out to me via the “Domain” Channel.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;If you want to comment on, or talk about this post you can do this via &lt;a href=&quot;https://www.jack.chat/j/sounds-good-to-me&quot;&gt;&lt;img src=&quot;/assets/talk-about-jack.png&quot; width=&quot;32&quot; height=&quot;32&quot; title=&quot;Talk About Jack&quot; /&gt; Talk About Jack&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
 </description>
         <pubDate>Wed, 16 Dec 2015 09:44:47 +0100</pubDate>
         <link>http://derkobe.github.io/2015/12/16/phoenix-channels-in-a-google-chrome-extension.html</link>
