@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Phoenix HTML Mailer</title>
-  <meta name="description" content="Sooner or later you want to send (HTML) emails with Phoenix. Rails has Mailers for this (and I’m sure Phoenix will get those pretty soon).Until this will hap...">
+  <meta name="description" content="Sooner or later you want to send (HTML) emails with Phoenix. Rails has Mailers for this and Phoenix has a guide that describes how to send basic emails.">
 
   <link rel="shortcut icon" type="image/png" href="/favicon.png">
   <link rel="stylesheet" href="/css/main.css">
@@ -63,8 +63,13 @@
   </header>
 
   <div class="post-content" itemprop="articleBody">
-    <p>Sooner or later you want to send (HTML) emails with Phoenix. Rails has Mailers for this (and I’m sure Phoenix will get those pretty soon).
-Until this will happen I wrote a bunch of modules that let’s you easily send emails. The actual sending of the emails will be done via <a href="https://www.mailgun.com/">Mailgun</a>.
+    <p>Sooner or later you want to send (HTML) emails with Phoenix. Rails has Mailers for this and Phoenix has a 
+<a href="http://www.phoenixframework.org/docs/sending-email">guide</a> that describes how to send basic emails.</p>
+
+<p>I wanted a system that you can use like a Controller or Model the <em>Phoenix way</em>, so I wrote a bunch of modules 
+that let’s you easily send emails.</p>
+
+<p>The actual sending of the emails will be done via <a href="https://www.mailgun.com/">Mailgun</a>.
 I find Mailgun to be an excellent service and even the free plan will satisfy the requirements of most people.</p>
 
 <p>Since I’m not a fan of long prose let’s dig right into code:</p>

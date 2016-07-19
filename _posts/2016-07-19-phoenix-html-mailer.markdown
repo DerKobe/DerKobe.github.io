@@ -4,8 +4,13 @@ title: "Phoenix HTML Mailer"
 date: 2016-07-19T09:55:25+02:00
 ---
 
-Sooner or later you want to send (HTML) emails with Phoenix. Rails has Mailers for this (and I'm sure Phoenix will get those pretty soon).
-Until this will happen I wrote a bunch of modules that let's you easily send emails. The actual sending of the emails will be done via [Mailgun](https://www.mailgun.com/).
+Sooner or later you want to send (HTML) emails with Phoenix. Rails has Mailers for this and Phoenix has a 
+[guide](http://www.phoenixframework.org/docs/sending-email) that describes how to send basic emails.
+
+I wanted a system that you can use like a Controller or Model the _Phoenix way_, so I wrote a bunch of modules 
+that let's you easily send emails.
+
+The actual sending of the emails will be done via [Mailgun](https://www.mailgun.com/).
 I find Mailgun to be an excellent service and even the free plan will satisfy the requirements of most people.
  
 Since I'm not a fan of long prose let's dig right into code:
