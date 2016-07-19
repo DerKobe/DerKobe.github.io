@@ -24,9 +24,3 @@ So, take a minute and maybe get a little peace with this or just sharpen you mou
     <!--<![endif]-->
   </object>
 </div>
-
-
----
-
-# Comments
-_If you want to comment on, or talk about this post you can do this via [<img src="/assets/talk-about-jack.png" width="32" height="32" title="Talk About Jack" /> Talk About Jack](https://www.jack.chat/j/sounds-good-to-me)._

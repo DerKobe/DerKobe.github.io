@@ -73,9 +73,3 @@ class PubsubClient
 There is a lot of room for improvements here. For one the passed follow-up function in form of the ```next```-parameters should be replaced with promises.
 
 But that's a problem for future me.
-
-
----
-
-# Comments
-_If you want to comment on, or talk about this post you can do this via [<img src="/assets/talk-about-jack.png" width="32" height="32" title="Talk About Jack" /> Talk About Jack](https://www.jack.chat/j/sounds-good-to-me)._

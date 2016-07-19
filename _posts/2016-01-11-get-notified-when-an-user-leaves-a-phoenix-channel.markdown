@@ -110,8 +110,3 @@ end
 
 # Conclusion
 This system works very well for me in production. And compared to Faye with which I worked in the past, I begin to see the true power of Elixir/Erlang. It's just a blast!
-
----
-
-# Comments
-_If you want to comment on, or talk about this post you can do this via [<img src="/assets/talk-about-jack.png" width="32" height="32" title="Talk About Jack" /> Talk About Jack](https://www.jack.chat/j/sounds-good-to-me)._

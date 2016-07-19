@@ -140,8 +140,3 @@ Of course processes can call services or other processes or the other way around
 # Conclusion
 
 So far this concept worked out great for me and the teams I worked with. By having to give services and processes names you start to think more modular and concepts get more visible instead of one gooey flow of data through controllers, models, and views.
-
----
-
-# Comments
-_If you want to comment on, or talk about this post you can do this via [<img src="/assets/talk-about-jack.png" width="32" height="32" title="Talk About Jack" /> Talk About Jack](https://www.jack.chat/j/sounds-good-to-me)._
