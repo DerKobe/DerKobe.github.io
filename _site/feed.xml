@@ -6,12 +6,12 @@
 </description>
     <link>http://derkobe.github.io/</link>
     <atom:link href="http://derkobe.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 24 Dec 2016 09:54:03 +0100</pubDate>
-    <lastBuildDate>Sat, 24 Dec 2016 09:54:03 +0100</lastBuildDate>
+    <pubDate>Sun, 08 Jan 2017 17:20:24 +0100</pubDate>
+    <lastBuildDate>Sun, 08 Jan 2017 17:20:24 +0100</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
     
       <item>
-        <title>Email Tracking Pixel in Phoenix</title>
+        <title>Email Tracking Pixel in Elixir Phoenix</title>
         <description>&lt;p&gt;I needed to track wether or not an user opened a notification email sent by my app (to prevent spamming him with further emails).
 So I embedded an img-Tag in the email pointing to something like https://myhost.com/:identifier.gif.&lt;/p&gt;
 
@@ -24,11 +24,11 @@ So I embedded an img-Tag in the email pointing to something like https://myhost.
 
 &lt;p&gt;For the first one I found &lt;a href=&quot;https://github.com/mathiasbynens/small&quot;&gt;this Github repo by mathiasbynens&lt;/a&gt; with a huge list of all kinds of file types and their smallest possible valid representation.&lt;/p&gt;
 
-&lt;p&gt;I downloaded the gif from the repo, openedan IEx shell and loaded the file. Then I printed the bitstring representation to the console and copy&amp;amp;pasted it into my controller.&lt;/p&gt;
+&lt;p&gt;I downloaded the gif from the repo, opened an IEx shell and loaded the file. Then I printed the bitstring representation to the console and copy&amp;amp;pasted it into my controller.&lt;/p&gt;
 
 &lt;p&gt;For the second part I just googled my problem and found a simple example on stackoverflow.&lt;/p&gt;
 
-&lt;p&gt;Then I put it all together and this is the result (the controller-part at least):&lt;/p&gt;
+&lt;p&gt;Then I put it all together and this is the result:&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-elixir&quot; data-lang=&quot;elixir&quot;&gt;&lt;span class=&quot;k&quot;&gt;defmodule&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;MyApp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;TrackingController&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;
   &lt;span class=&quot;kn&quot;&gt;use&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;MyApp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Web&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:controller&lt;/span&gt;
@@ -46,6 +46,11 @@ So I embedded an img-Tag in the email pointing to something like https://myhost.
   &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
+&lt;p&gt;And in the email template I put something like this at the end:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-elixir&quot; data-lang=&quot;elixir&quot;&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;img&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;sd&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;lt;%= ~s(&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;@host&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;/api/track-email/&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;@identifier&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;.gif) %&amp;gt;&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;BTW on how to more comfortable send emails in Elixir Phoenix I wrote &lt;a href=&quot;/2016/07/19/phoenix-html-mailer.html&quot;&gt;a post about it here&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Sat, 24 Dec 2016 09:34:32 +0100</pubDate>
         <link>http://derkobe.github.io/2016/12/24/email-tracking-pixel-in-phoenix.html</link>

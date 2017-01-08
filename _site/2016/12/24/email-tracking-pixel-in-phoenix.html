@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Email Tracking Pixel in Phoenix</title>
+  <title>Email Tracking Pixel in Elixir Phoenix</title>
   <meta name="description" content="I needed to track wether or not an user opened a notification email sent by my app (to prevent spamming him with further emails).So I embedded an img-Tag in ...">
 
   <link rel="shortcut icon" type="image/png" href="/favicon.png">
@@ -58,7 +58,7 @@
         <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">Email Tracking Pixel in Phoenix</h1>
+    <h1 class="post-title" itemprop="name headline">Email Tracking Pixel in Elixir Phoenix</h1>
     <p class="post-meta"><time datetime="2016-12-24T09:34:32+01:00" itemprop="datePublished">Dec 24, 2016</time></p>
   </header>
 
@@ -75,11 +75,11 @@ So I embedded an img-Tag in the email pointing to something like https://myhost.
 
 <p>For the first one I found <a href="https://github.com/mathiasbynens/small">this Github repo by mathiasbynens</a> with a huge list of all kinds of file types and their smallest possible valid representation.</p>
 
-<p>I downloaded the gif from the repo, openedan IEx shell and loaded the file. Then I printed the bitstring representation to the console and copy&amp;pasted it into my controller.</p>
+<p>I downloaded the gif from the repo, opened an IEx shell and loaded the file. Then I printed the bitstring representation to the console and copy&amp;pasted it into my controller.</p>
 
 <p>For the second part I just googled my problem and found a simple example on stackoverflow.</p>
 
-<p>Then I put it all together and this is the result (the controller-part at least):</p>
+<p>Then I put it all together and this is the result:</p>
 
 <figure class="highlight"><pre><code class="language-elixir" data-lang="elixir"><span class="k">defmodule</span> <span class="no">MyApp</span><span class="o">.</span><span class="no">TrackingController</span> <span class="k">do</span>
   <span class="kn">use</span> <span class="no">MyApp</span><span class="o">.</span><span class="no">Web</span><span class="p">,</span> <span class="ss">:controller</span>
@@ -97,6 +97,11 @@ So I embedded an img-Tag in the email pointing to something like https://myhost.
   <span class="k">end</span>
 <span class="k">end</span></code></pre></figure>
 
+<p>And in the email template I put something like this at the end:</p>
+
+<figure class="highlight"><pre><code class="language-elixir" data-lang="elixir"><span class="o">&lt;</span><span class="n">img</span> <span class="n">src</span><span class="o">=</span><span class="sd">"</span><span class="s2">&lt;%= ~s(</span><span class="si">#{</span><span class="nv">@host</span><span class="si">}</span><span class="s2">/api/track-email/</span><span class="si">#{</span><span class="nv">@identifier</span><span class="si">}</span><span class="s2">.gif) %&gt;"</span> <span class="o">/&gt;</span></code></pre></figure>
+
+<p>BTW on how to more comfortable send emails in Elixir Phoenix I wrote <a href="/2016/07/19/phoenix-html-mailer.html">a post about it here</a>.</p>
 
   </div>
 

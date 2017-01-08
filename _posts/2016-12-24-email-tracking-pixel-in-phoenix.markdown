@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Email Tracking Pixel in Phoenix"
+title: "Email Tracking Pixel in Elixir Phoenix"
 date: 2016-12-24T09:34:32+01:00
 ---
 
@@ -14,11 +14,11 @@ Now I had to find out about two things:
 
 For the first one I found [this Github repo by mathiasbynens](https://github.com/mathiasbynens/small) with a huge list of all kinds of file types and their smallest possible valid representation.
 
-I downloaded the gif from the repo, openedan IEx shell and loaded the file. Then I printed the bitstring representation to the console and copy&pasted it into my controller.
+I downloaded the gif from the repo, opened an IEx shell and loaded the file. Then I printed the bitstring representation to the console and copy&pasted it into my controller.
 
 For the second part I just googled my problem and found a simple example on stackoverflow.
 
-Then I put it all together and this is the result (the controller-part at least):
+Then I put it all together and this is the result:
 
 {% highlight elixir %}
 defmodule MyApp.TrackingController do
@@ -37,3 +37,11 @@ defmodule MyApp.TrackingController do
   end
 end
 {% endhighlight %}
+
+And in the email template I put something like this at the end:
+
+{% highlight elixir %}
+<img src="<%= ~s(#{@host}/api/track-email/#{@identifier}.gif) %>" />
+{% endhighlight %}
+
+BTW on how to more comfortable send emails in Elixir Phoenix I wrote [a post about it here](/2016/07/19/phoenix-html-mailer.html).
